@@ -1343,6 +1343,8 @@ In the file howTo.md you can find more details about translations.
   <string name="menu_orderMeasurements_tt">Ordenar os valores medidos em gráficos e tabelas</string>
   <string name="menu_orderOutputs">Ordenar saídas</string>
   <string name="menu_orderOutputs_tt">Ordenas as saídas para circuito integrado.</string>
+  <string name="menu_parentFolder">Pasta superior ({0})</string>
+  <string name="menu_parentFolder_tt">Mostra os componentes na pasta superior "{0}".</string>
   <string name="menu_paste">Colar</string>
   <string name="menu_insertAsNew">Colar em nova janela</string>
   <string name="menu_insertAsNew_tt">O conteúdo da área de transferência será colado na nova janela.</string>

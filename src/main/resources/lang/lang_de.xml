@@ -1875,6 +1875,8 @@ Sind evtl. die Namen der Variablen nicht eindeutig?</string>
     <string name="menu_orderMeasurements_tt">Sortiert die Messwerte für die grafische Anzeige und die Tabellenansicht</string>
     <string name="menu_orderOutputs">Sortieren der Ausgänge</string>
     <string name="menu_orderOutputs_tt">Sortiert die Ausgänge für die Verwendung als eingebettete Schaltung</string>
+    <string name="menu_parentFolder">Übergeordneter Ordner ({0})</string>
+    <string name="menu_parentFolder_tt">Zeigt die Bauteile im übergeordneten Ordner "{0}".</string>
     <string name="menu_paste">Einfügen</string>
     <string name="menu_rotate">Rotieren</string>
     <string name="menu_sim">Simulation</string>

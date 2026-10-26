@@ -674,6 +674,8 @@ In the file howTo.md you can find more details about translations.
   <string name="menu_orderMeasurements_tt">排序在图形和表格视图中的测量值信号</string>
   <string name="menu_orderOutputs">排序输出信号</string>
   <string name="menu_orderOutputs_tt">排序输出信号(作为子电路使用时)</string>
+  <string name="menu_parentFolder">上级文件夹 ({0})</string>
+  <string name="menu_parentFolder_tt">显示上级文件夹 "{0}" 中的组件。</string>
   <string name="menu_paste">粘贴</string>
   <string name="menu_rotate">旋转</string>
   <string name="menu_sim">仿真</string>

@@ -817,6 +817,8 @@ In the file howTo.md you can find more details about translations.
   <string name="menu_orderMeasurements_tt">Orders the measurement values in the graphical and table view</string>
   <string name="menu_orderOutputs">Order Outputs</string>
     <string name="menu_orderOutputs_tt">Order the outputs for the use as a embedded circuit.</string>
+    <string name="menu_parentFolder">Parent folder ({0})</string>
+    <string name="menu_parentFolder_tt">Shows the components in the parent folder "{0}".</string>
   <string name="menu_paste">Paste</string>
   <string name="menu_rotate">Rotate</string>
   <string name="menu_sim">Simulation</string>

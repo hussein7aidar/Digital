@@ -1280,6 +1280,8 @@ In the file howTo.md you can find more details about translations.
   <string name="menu_orderMeasurements_tt">Ordena los valores de las medidas en la gráfica y en la vista de tabla.</string>
   <string name="menu_orderOutputs">Ordena las salidas</string>
   <string name="menu_orderOutputs_tt">Ordena las salidas para usar el circuito en modo incrustado.</string>
+  <string name="menu_parentFolder">Carpeta superior ({0})</string>
+  <string name="menu_parentFolder_tt">Muestra los componentes de la carpeta superior "{0}".</string>
   <string name="menu_paste">Pegar</string>
   <string name="menu_rotate">Girar</string>
   <string name="menu_sim">Simulación</string>

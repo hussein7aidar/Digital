@@ -1846,6 +1846,8 @@ In the file howTo.md you can find more details about translations.
     </string>
     <string name="menu_orderOutputs">Ordonner les sorties</string>
     <string name="menu_orderOutputs_tt">Ordonne les sorties pour l'utilisation comme circuit intégré</string>
+    <string name="menu_parentFolder">Dossier parent ({0})</string>
+    <string name="menu_parentFolder_tt">Affiche les composants du dossier parent "{0}".</string>
     <string name="menu_paste">Coller</string>
     <string name="menu_rotate">Pivoter</string>
     <string name="menu_sim">Simulation</string>

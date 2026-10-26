@@ -16,6 +16,7 @@ import de.neemann.gui.ToolTipAction;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import java.io.File;
 import java.io.IOException;
 
 /**
@@ -69,6 +70,7 @@ public class LibrarySelector implements LibraryListener {
             JMenuItem m = componentsMenu.getItem(componentsMenu.getItemCount() - 1);
             if (m instanceof JMenu) {
                 JMenu menu = (JMenu) m;
+                addParentFolderItem(menu);
                 menu.addSeparator();
                 menu.add(new ToolTipAction(Lang.get("menu_update")) {
                     @Override
@@ -82,6 +84,31 @@ public class LibrarySelector implements LibraryListener {
                 }.setToolTip(Lang.get("menu_update_tt")).createJMenuItem());
             }
         }
+    }
+
+    private void addParentFolderItem(JMenu menu) {
+        File root = library.getRootFilePath();
+        if (root == null)
+            return;
+
+        final File parent = root.getParentFile();
+        if (parent == null)
+            return;
+
+        String parentName = parent.getName();
+        if (parentName.isEmpty())
+            parentName = parent.getPath();
+
+        menu.add(new ToolTipAction(Lang.get("menu_parentFolder", parentName)) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    library.setRootFilePath(parent);
+                } catch (IOException ex) {
+                    SwingUtilities.invokeLater(new ErrorMessage(Lang.get("msg_errorUpdatingLibrary")).addCause(ex));
+                }
+            }
+        }.setToolTip(Lang.get("menu_parentFolder_tt", parent.getAbsolutePath())).createJMenuItem());
     }
 
     private void addComponents(JMenu parts, LibraryNode node) {
